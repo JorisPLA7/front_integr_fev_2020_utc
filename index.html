@@ -23,7 +23,7 @@
         </a>
         <ul class="nav nav-item">
             <li class="nav-item">
-                <a class="nav-link" href="#defis">Facebook de l'integ</a>
+                <a class="nav-link" href="https://www.facebook.com/integ.fev">FACEBOOK DE L'INTEG</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#utiles">INFOS UTILES</a>
@@ -34,7 +34,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#navbar">Annonce</a>
                     <a class="dropdown-item" href="#clans">Clans</a>
-                    <a class="dropdown-item" href="#defis">Defis & scores</a>
+                    <a class="dropdown-item" href="#defis">Scores aux defis</a>
                     <a class="dropdown-item" href="#map">Carte de l'integ</a>
                     <div role="separator" class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#utiles">Infos Utiles</a>
@@ -42,19 +42,20 @@
             </li>
         </ul>
     </nav>
-    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+
+    <div data-spy="scroll" data-target="#navbar" data-offset="0" id="scrollspy">
 
 
         <!-- ANNONCE -->
-        <div class="bs-docs-header" id="top" style="background-color: pink;">
-            <div style="background-color:white;" class="container">
-                <div class="row">
-                    <div class="col-sm">
+        <div class="bs-docs-header content" id="top">
+            <div class="container" id="annonce">
+                <div class="row pt-3 pb-3">
+                    <div class="col-5 mx-auto">
                         <img class="img-fluid float-left rounded" src="images/logo-anime2.gif">
 
                     </div>
-                    <div class="col">
-                        <h1>Bienvenue a toi nouvo !</h1>
+                    <div class="col-md">
+                        <h1 class="display-2">Bienvenue a toi nouvo !</h1>
                         <h3>Titre 2</h3>
                         <p>Best semaines de ta vie blabla</p>
 
@@ -72,9 +73,9 @@
         </div>
 
         <!-- CLANS -->
-        <div class="bs-docs-header" id="content" style="background-color: yellow;">
-            <div class="container" id="clans" style="background-color: aquamarine;">
-                <h2>Les clans</h2>
+        <div class="bs-docs-header" class="content" id="clans-content">
+            <div class=" container rounded pt-3" id="clans" style="background-color: aquamarine;">
+                <h1>Les clans</h1>
                 <p>Choisis ton camp nouvo.</p>
                 <div class="row">
                     <div style="background-color:#202020; " class="col-sm" id="desc-dagul">
@@ -92,10 +93,13 @@
         </div>
 
         <!-- DEFIS -->
-        <div style="background-color:bisque" class="content" id="defis">
-            <div class="container" id="defis">
-                <h2>Défis de l'integ</h2>
+        <div style="background-color:bisque" class="content" id="defis-content">
+            <div class="container pt-3" id="defis">
+                <div id="" class="mt-3 mr-5 float-right record-led"></div>
+                <h1 class="pt-1">Scores aux defis</h1>
                 <p>Les défis commencent le xx et terminent le xx</p>
+
+
                 <div class="row">
                     <div style="background-color:#ffc7c7; height:300px" class="col-md">
                         Score Dagul : 123456789
@@ -106,7 +110,7 @@
                     </div>
 
                     <div style="background-color:#77c7c7;" class="col-md">
-                        Défis en cours :
+                        Defis en cours :
                     </div>
                 </div>
             </div>
@@ -114,9 +118,9 @@
         </div>
 
         <!-- INFOS UTILES  -->
-        <div class="content">
-            <div class="container" id="utiles">
-                <h2>Infos Utiles</h2>
+        <div class="content" id="utiles-content">
+            <div class="container pt-3" id="utiles">
+                <h1>Infos Utiles</h1>
                 <div class="card-deck">
                     <div class="card">
                         <div class="card-body">
@@ -127,7 +131,7 @@
                         </div>
 
                         <div class="card-body">
-                            <button type="button" class="btn btn-light">Télécharger</button>
+                            <button type="button" class="btn btn-light">Telecharger</button>
                         </div>
                     </div>
                     <div class="card">
@@ -138,7 +142,7 @@
                             <img src="images/318x180.svg" class="img-fluid rounded" alt="...">
                         </div>
                         <div class="card-body">
-                            <button type="button" class="btn btn-light">Télécharger</button>
+                            <button type="button" class="btn btn-light">Telecharger</button>
                         </div>
                     </div>
                     <div class="card">
@@ -149,7 +153,7 @@
                             <img src="images/facebook-old.png" class="img-fluid rounded" alt="...">
                         </div>
                         <div class="card-body">
-                            <button type="button" class="btn btn-light">Télécharger</button>
+                            <button type="button" class="btn btn-light">Telecharger</button>
                         </div>
                     </div>
 
@@ -160,10 +164,10 @@
         </div>
 
         <!-- CARTE -->
-        <div class="container" , id="map">
-            <div class="content">
-                <h2>La carte de l'integ</h2>
-                <p>Points d'intérêts, sponsors, tout est là.</p>
+        <div class="content" id="map-content">
+            <div class="container pt-3" , id="map">
+                <h1>La carte de l'integ</h1>
+                <p>Points d'interêts, sponsors, tout est là.</p>
                 <div class="col text-centered">
                     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1RO8M33kPKFHikUnIxRyqqnxxQHBtmyqL"
                         width="528" height="480" style="overflow: hidden;"></iframe>
@@ -173,20 +177,24 @@
         </div>
 
         <!-- PARTENAIRES -->
-        <div class="container" , id="partenaires">
-            <div class="row">
-                <div style="background-color:#c7c7c7; height:300px" class="col-md">
-                    Score Dagul : 123456789
-                </div>
+        <div class="content" id="partenaires-content">
+            <div class="container pt-3" , id="partenaires">
+                <h1>Partenaires</h1>
+                <div class="row">
+                    <div style="background-color:#c7c7c7; height:50px" class="col-md">
+                        Score Dagul : 123456789
+                    </div>
 
-                <div style="background-color:#aac7c7;" class="col-md">
-                    Score Duri : 98764321
-                </div>
+                    <div style="background-color:#aac7c7;" class="col-md">
+                        Score Duri : 98764321
+                    </div>
 
-                <div style="background-color:#77c7c7;" class="col-md">
-                    Défis en cours :
+                    <div style="background-color:#77c7c7;" class="col-md">
+                        Defis en cours :
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <footer style="height: 200px; background-color:gray;" role="contentinfo">

@@ -1,0 +1,71 @@
+/* Fonts */
+
+@font-face {
+    font-family: west;
+    src: url(../fonts/west.ttf);
+}
+
+@font-face {
+    font-family: young;
+    src: url(../fonts/young-heart.ttf);
+}
+
+/* Generic */
+
+h1, h2, h3, h4, h5, nav * {
+    font-stretch: expanded;
+    font-family: young;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+}
+
+/* specific */
+
+#top {
+    background-color: #fff5c7;
+    -moz-box-shadow: inset 0 0 20px #3f2900;
+    -webkit-box-shadow: inset 0 0 20px #3f2900;
+    box-shadow: inset 0 0 120px #724a00;
+}
+
+#clans-content {
+    background-image: linear-gradient(#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #252525);
+}
+
+#desc-dagul {
+    background-image: linear-gradient(-45deg, #101010, #252525);
+}
+
+#desc-duri {
+    background-image: linear-gradient(-150deg, rgb(255, 255, 255), rgb(255, 255, 255), rgb(143, 143, 143));
+}
+
+#defis-content {
+    background-image: linear-gradient( #252525,  #252525,  #252525,  #252525,  #252525, #ffffff);
+}
+
+#defis h1, #defis p {
+    color: white;
+}
+
+.record-led {
+    width: 20px;
+    height: 20px;
+    border-radius:10px;
+    background-color: red;
+    -webkit-animation-name: blink;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes blink {
+    0%{background-color: red;}
+    50%{background-color: rgb(255, 0, 0, 0);}
+    100%{background-color: red;}
+}
