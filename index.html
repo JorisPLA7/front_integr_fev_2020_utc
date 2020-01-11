@@ -10,27 +10,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>IntegFev2020</title>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/integfev2020.css">
+
+    <title>I n t e g F e v 2 0 2 0</title>
 </head>
 
-<body>
+<body style="  cursor: url('cursor/FA32/FAarrow.cur'), auto;	">
     <nav id="navbar" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
+        <a class="navbar-brand" href="#"><img src="images/LogoVec.png" class="img-fluid rounded"
+                style="max-height: 70px;">
+        </a>
+        <ul class="nav nav-item">
             <li class="nav-item">
-                <a class="nav-link" href="#fat">@fat</a>
+                <a class="nav-link" href="#defis">Facebook de l'integ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#mdo">@mdo</a>
+                <a class="nav-link" href="#utiles">INFOS UTILES</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Dropdown</a>
+                    aria-expanded="false">NAVIGATION</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#one">one</a>
-                    <a class="dropdown-item" href="#two">two</a>
+                    <a class="dropdown-item" href="#navbar">Annonce</a>
+                    <a class="dropdown-item" href="#clans">Clans</a>
+                    <a class="dropdown-item" href="#defis">Defis & scores</a>
+                    <a class="dropdown-item" href="#map">Carte de l'integ</a>
                     <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#three">three</a>
+                    <a class="dropdown-item" href="#utiles">Infos Utiles</a>
                 </div>
             </li>
         </ul>
@@ -39,9 +46,25 @@
 
 
         <!-- ANNONCE -->
-        <div class="bs-docs-header" id="content" style="background-color: pink;">
-            <div style="background-color:whitesmoke;height:150px" class="container">
-                Component
+        <div class="bs-docs-header" id="top" style="background-color: pink;">
+            <div style="background-color:white;" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="img-fluid float-left rounded" src="images/logo-anime2.gif">
+
+                    </div>
+                    <div class="col">
+                        <h1>Bienvenue a toi nouvo !</h1>
+                        <h3>Titre 2</h3>
+                        <p>Best semaines de ta vie blabla</p>
+
+                        <h3>Phrase du jour :</h3>
+                        <p>Les fev c'est les plus beaux. <br>
+                            <i class="fa fa-quote-right" aria-hidden="true">Tout le monde</i>
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" , id="annonce">
@@ -51,13 +74,16 @@
         <!-- CLANS -->
         <div class="bs-docs-header" id="content" style="background-color: yellow;">
             <div class="container" id="clans" style="background-color: aquamarine;">
+                <h2>Les clans</h2>
+                <p>Choisis ton camp nouvo.</p>
                 <div class="row">
-                    <div style="background-color:#c7c7c7; height:300px" class="col-sm" id="desc-dagul">
-                        Dagul
+                    <div style="background-color:#202020; " class="col-sm" id="desc-dagul">
+                        <img src="./images/dagul.svg" class="img-fluid" alt="Logo dagul">
                     </div>
 
-                    <div style="background-color:#474747;" class="col-sm" id="desc-duri">
-                        Duri
+                    <div style="background-color:#ffffff;" class="col-sm" id="desc-duri">
+                        <img src="./images/duri.svg" class="img-fluid" alt="Logo duri">
+
                     </div>
 
                 </div>
@@ -67,7 +93,9 @@
 
         <!-- DEFIS -->
         <div style="background-color:bisque" class="content" id="defis">
-            <div class="container">
+            <div class="container" id="defis">
+                <h2>Défis de l'integ</h2>
+                <p>Les défis commencent le xx et terminent le xx</p>
                 <div class="row">
                     <div style="background-color:#ffc7c7; height:300px" class="col-md">
                         Score Dagul : 123456789
@@ -86,34 +114,45 @@
         </div>
 
         <!-- INFOS UTILES  -->
-        <div class="content" , id="utiles">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Info utile 1</p>
+        <div class="content">
+            <div class="container" id="utiles">
+                <h2>Infos Utiles</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">La plaquette </p>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/318x180.svg" class="img-fluid rounded" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                            <button type="button" class="btn btn-light">Télécharger</button>
+                        </div>
                     </div>
-                    <img src="images/318x180.svg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">of a card.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Le planning</p>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/318x180.svg" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-light">Télécharger</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This image is in the middle</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Bill Fev sur Facebook</p>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/facebook-old.png" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-light">Télécharger</button>
+                        </div>
                     </div>
-                    <img src="images/318x180.svg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">of a card.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This image is in the middle</p>
-                    </div>
-                    <img src="images/318x180.svg" alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">of a card.</p>
-                    </div>
+
                 </div>
 
             </div>
@@ -122,10 +161,14 @@
 
         <!-- CARTE -->
         <div class="container" , id="map">
-            <div class="col">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1RO8M33kPKFHikUnIxRyqqnxxQHBtmyqL" width="528"
-                    height="480" style="overflow: hidden;"></iframe>
+            <div class="content">
+                <h2>La carte de l'integ</h2>
+                <p>Points d'intérêts, sponsors, tout est là.</p>
+                <div class="col text-centered">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1RO8M33kPKFHikUnIxRyqqnxxQHBtmyqL"
+                        width="528" height="480" style="overflow: hidden;"></iframe>
 
+                </div>
             </div>
         </div>
 
@@ -145,6 +188,12 @@
                 </div>
             </div>
         </div>
+
+        <footer style="height: 200px; background-color:gray;" role="contentinfo">
+            <div class="container">
+                Footer
+            </div>
+        </footer>
 
 
     </div>
