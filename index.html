@@ -23,27 +23,27 @@
         </a>
         <ul class="nav nav-item">
             <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/integ.fev">FACEBOOK DE L'INTEG</a>
+                <a class="nav-link black" href="https://www.facebook.com/integ.fev">FACEBOOK DE L'INTEG</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#utiles">INFOS UTILES</a>
+                <a class="nav-link black" href="#utiles">INFOS UTILES</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">NAVIGATION</a>
+                <a class="nav-link dropdown-toggle black" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">NAVIGATION</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#navbar">Annonce</a>
-                    <a class="dropdown-item" href="#clans">Clans</a>
-                    <a class="dropdown-item" href="#defis">Scores aux defis</a>
-                    <a class="dropdown-item" href="#map">Carte de l'integ</a>
+                    <a class="dropdown-item black" href="#navbar">Annonce</a>
+                    <a class="dropdown-item black" href="#clans">Clans</a>
+                    <a class="dropdown-item black" href="#defis">Scores aux defis</a>
+                    <a class="dropdown-item black" href="#map">Carte de l'integ</a>
                     <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#utiles">Infos Utiles</a>
+                    <a class="dropdown-item black" href="#utiles">Infos Utiles</a>
                 </div>
             </li>
         </ul>
     </nav>
 
-    <div data-spy="scroll" data-target="#navbar" data-offset="0" id="scrollspy">
+    <di data-spy="scroll" data-target="#navbar" data-offset="0" id="scrollspy">
 
 
         <!-- ANNONCE -->
@@ -74,15 +74,15 @@
 
         <!-- CLANS -->
         <div class="bs-docs-header" class="content" id="clans-content">
-            <div class=" container rounded pt-3" id="clans" style="background-color: aquamarine;">
+            <div class=" container rounded pt-3" id="clans">
                 <h1>Les clans</h1>
                 <p>Choisis ton camp nouvo.</p>
                 <div class="row">
-                    <div style="background-color:#202020; " class="col-sm" id="desc-dagul">
+                    <div class="col-sm" id="desc-dagul">
                         <img src="./images/dagul.svg" class="img-fluid" alt="Logo dagul">
                     </div>
 
-                    <div style="background-color:#ffffff;" class="col-sm" id="desc-duri">
+                    <div class="col-sm" id="desc-duri">
                         <img src="./images/duri.svg" class="img-fluid" alt="Logo duri">
 
                     </div>
@@ -93,26 +93,54 @@
         </div>
 
         <!-- DEFIS -->
-        <div style="background-color:bisque" class="content" id="defis-content">
+        <div class="content" id="defis-content">
             <div class="container pt-3" id="defis">
                 <div id="" class="mt-3 mr-5 float-right record-led"></div>
                 <h1 class="pt-1">Scores aux defis</h1>
-                <p>Les défis commencent le xx et terminent le xx</p>
+                <p>Les défis commencent le xxxx et terminent le xxxx</p>
 
 
-                <div class="row">
-                    <div style="background-color:#ffc7c7; height:300px" class="col-md">
-                        Score Dagul : 123456789
+                <div class="card-deck">
+                    <div class="card old-paper-score">
+                        <div class="">
+                            <h2 class="card-text text-center">Wanted</h2>
+                        </div>
+                        <div class="">
+                            <h2 class="card-text display-3 text-center">Dagul Draken</h2>
+                        </div>
+
+                        <div class="card-text " id="">
+                            <h2 class="text-center display-3" id="dagul-bg">000 points</h2>
+                        </div>
+
                     </div>
 
-                    <div style="background-color:#aac7c7;" class="col-md">
-                        Score Duri : 98764321
-                    </div>
+                    <div class="card old-paper-score ">
+                        <div class="">
+                            <h2 class="card-text text-center">Wanted</h2>
+                        </div>
+                        <div class="">
+                            <h2 class="card-text display-3 text-center">Duri Liem</h2>
+                        </div>
 
-                    <div style="background-color:#77c7c7;" class="col-md">
-                        Defis en cours :
+                        <div class="card-text " id="">
+                            <h2 class="text-center display-3" id="dagul-bg">000 points</h2>
+                        </div>
+
+                    </div>
+                    <div class="card black-paper-score ">
+                        <div class="">
+                            <h2 class="card-text text-center p-1">Defis a suivre :</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.facebook.com/integ.fev">
+                                <h1 class="card-text text-center">Suivez Bill Fev sur Facebook</h1>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -124,7 +152,7 @@
                 <div class="card-deck">
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-text">La plaquette </p>
+                            <h3 class="card-text">La plaquette </h3>
                         </div>
                         <div class="card-body">
                             <img src="images/318x180.svg" class="img-fluid rounded" alt="...">
@@ -136,7 +164,7 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-text">Le planning</p>
+                            <h3 class="card-text">Le planning</h3>
                         </div>
                         <div class="card-body">
                             <img src="images/318x180.svg" class="img-fluid rounded" alt="...">
@@ -147,13 +175,16 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-text">Bill Fev sur Facebook</p>
+                            <h3 class="card-text">Bill Fev sur Facebook</h3>
                         </div>
+                        <!-- <div class="card-body">
+                            <img src="images/facebook-old.png" class="img-fluid rounded" alt="facebook">
+                        </div> -->
                         <div class="card-body">
-                            <img src="images/facebook-old.png" class="img-fluid rounded" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <button type="button" class="btn btn-light">Telecharger</button>
+                            <a href="https://www.facebook.com/integ.fev"> <button type="button"
+                                    class="btn btn-dark">Bill
+                                    Fev sur Facebook</button>
+                            </a>
                         </div>
                     </div>
 
@@ -170,7 +201,7 @@
                 <p>Points d'interêts, sponsors, tout est là.</p>
                 <div class="col text-centered">
                     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1RO8M33kPKFHikUnIxRyqqnxxQHBtmyqL"
-                        width="528" height="480" style="overflow: hidden;"></iframe>
+                        width="328" height="480" style="overflow: hidden;"></iframe>
 
                 </div>
             </div>
@@ -182,6 +213,26 @@
                 <h1>Partenaires</h1>
                 <div class="row">
                     <div style="background-color:#c7c7c7; height:50px" class="col-md">
+                        Partenaire 1
+                    </div>
+
+                    <div style="background-color:#aac7c7; height:50px" class="col-md">
+                        Partenaire 2
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer role="contentinfo">
+            <div class="container pt-3" id="footer" style="height: 100px;">
+                <h3 class="pt-1">IntegFev 2020</h3>
+                <p>Aucuns droits reserves</p>
+
+                <!-- 
+                <div class="row">
+                    <div style="background-color:#ffc7c7; height:300px" class="col-md">
                         Score Dagul : 123456789
                     </div>
 
@@ -192,31 +243,24 @@
                     <div style="background-color:#77c7c7;" class="col-md">
                         Defis en cours :
                     </div>
-                </div>
-            </div>
-
-        </div>
-
-        <footer style="height: 200px; background-color:gray;" role="contentinfo">
-            <div class="container">
-                Footer
+                </div> -->
             </div>
         </footer>
 
 
-    </div>
+        </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
