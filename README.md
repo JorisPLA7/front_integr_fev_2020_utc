@@ -7,4 +7,4 @@ Pure CSS HTML JS , avec [Bootstrap](https://getbootstrap.com) pour le visuel et 
 https://assos.utc.fr/integfev/ 
 
 ## Back-up: 
-https://jorisplacette.fr/integfev
+https://jorisplacette.fr/integfev2020
