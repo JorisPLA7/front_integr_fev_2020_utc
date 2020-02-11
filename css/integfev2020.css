@@ -40,10 +40,30 @@ h1, h2, h3, h4, h5, h6, nav * {
     box-shadow: inset 0 0 120px #724a00;
     -webkit-animation-name: pending;
     /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: 4.1s;
     /* Safari 4.0 - 8.0 */
     animation-name: pending;
-    animation-duration: 4s;
+    animation-duration: 4.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#utiles-content {
+    background-image: url("images/edt.png");
+}
+
+.old-paper-score-bis {
+    /* border-radius: 1%; */
+    background-color: #fff5c7;
+    -moz-box-shadow: inset 0 0 20px #3f2900;
+    -webkit-box-shadow: inset 0 0 20px #3f2900;
+    box-shadow: inset 0 0 120px #724a00;
+    -webkit-animation-name: pending;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4.3s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: pending;
+    animation-duration: 4.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -56,7 +76,7 @@ h1, h2, h3, h4, h5, h6, nav * {
     box-shadow: inset 0 0 120px #000000;
 }
 
-.black-paper-score p, .black-paper-score h2, .black-paper-score h3 {
+.black-paper-score p, .black-paper-score h2, .black-paper-score h3, .black-paper-score h4, .black-paper-score h5 {
     color: white;
 }
 
@@ -64,7 +84,7 @@ h1, h2, h3, h4, h5, h6, nav * {
     background-image: linear-gradient(#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #252525);
 }
 
-#dagul-bg {
+.dagul-bg {
     background-image: "images/";
     transform: rotate(-4deg);
 }
