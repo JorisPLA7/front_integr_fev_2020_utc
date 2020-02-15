@@ -21,8 +21,21 @@ h1, h2, h3, h4, h5, h6, nav * {
 
 /* specific */
 
-.black {
-    color: black;
+.mcdo, .mcdo h3 a {
+    background-color: darkgreen;
+    color: yellow;
+    max-height: 90px;
+}
+
+.speedpark, .speedpark img {
+    background-color: white;
+    max-height: 90px;
+    text-align: center;
+    /* color: black; */
+}
+
+.mcdo h2, .speedpark h2 .black {
+    color: yellow;
 }
 
 #top {
@@ -112,6 +125,47 @@ footer {
 
 footer h6, footer h3, footer p {
     color: white;
+}
+
+.sponso {
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    -webkit-animation-name: zoom;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: zoom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#sponso2 {
+    animation-delay: 400ms;
+}
+
+#sponso3 {
+    animation-delay: 800ms;
+}
+
+#sponso4 {
+    animation-delay: 1200ms;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        transform: scale(100%, 100%);
+        transform-origin: 50% 50%;
+    }
+    50% {
+        transform: scale(90%, 90%);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: scale(100%, 100%);
+        transform-origin: 50% 50%;
+    }
 }
 
 .record-led {
